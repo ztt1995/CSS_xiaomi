@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            width:100px;
+            height:100px;
+            background:blue;
+        }
+        #my_div{
+            background:yellow;
+        }
+        .my_li{
+            width:100px;
+            height:50px;
+            background:teal;
+        }
+        #my_ul2 .my_li{
+            width: 50px;;
+            height: 50px;
+            background: red;
+        } */
+        /* #my_ul2 li{
+            border:1px solid red;
+        } */
+        /* 亲子代选择器（只让自己的孩子拥有该样式，孙子后代没有） */
+        /* #my_ul2 >li{
+            border:1px solid red;
+        } */
+        /* 相邻兄弟选择器 */
+        /* #first_child + li{
+            background: rebeccapurple;
+        } */
+        /* 伪类选择器 */
+        /* 未访问 */
+        a:link{
+            background: blue;
+        }
+        a:visited{
+            background: yellow;
+        }
+        a:hover{
+            background:red;
+        }
+        a:active{
+            background: green;
+        } 
+        /*  hover在非a标签正在IE6是无效的*/
+        .div_hover:hover{
+            background: hotpink;
+        }
+        /* 内部的后面添加一个伪元素 行内元素*/
+        .demo::after{
+            content:'我是伪元素'
+        }
+        .demo::before{
+            content:'我是before伪元素';
+            background: red;
+        }
+        /* 属性选择器 */
+        div[id="my_div"]{
+            background:black;
+        }
+        
+
+    </style>
+    
+</head>
+<body>
+    <div>
+        王天宇
+    </div>
+    <div id="my_div">
+        张婷婷
+    </div>
+    <h1>
+        王天宇
+    </h1>
+
+    <ul>
+        <li id="first_child">111</li>
+        <li>222</li>
+        <li>333</li>
+    </ul>
+    <ul id="my_ul2">
+        <li>111</li>
+        <li>222</li>
+        <li>333
+            <ul>
+                <li>2级</li>
+            </ul>
+        </li>
+    </ul>
+    <a href="http://www.baidu.com">百度</a>
+    <div id="div_hover">
+        sss
+    </div>
+    <div class="demo">
+        demo 
+        <h2>
+            demo 标题
+        </h2>
+        哈哈哈哈
+    </div>
+</body>
+</html>

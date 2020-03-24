@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 500px;
+            /* height: 300px; */
+            background: #cccccc;
+        }
+        #child1{
+            width: 100px;
+            height:100px;
+            background: red;
+            float:right;
+        }  
+        #child2{
+            width: 100px;
+            height:100px;
+            background: blue;
+            float:left;
+        }
+        #child3{
+            width: 100px;
+            height:100px;
+            background: yellow;
+            float:left;
+        }
+        p{
+            background: yellow;
+            clear: both;
+        }
+        /* .clear{
+            clear: both;
+        }
+        .clearfix::after{
+            content:"";
+            display: block;
+            clear:both;
+        }
+        #main3{
+            background: green;
+            overflow: hidden;
+        } */
+
+        /* BFC 块级格式化上下文 
+            出发
+        
+        */
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="main" class="clearfix">
+        <div id="child1"></div>
+        <div id="child2"></div>
+        <div id="child3"></div>
+        <div class="clear"></div>
+    </div>
+    <!-- <div id="main2" class="clearfix">
+        <div id="child1"></div>
+        <div id="child2"></div>
+        <div class="clear"></div>
+    </div>
+    <div id="main3">
+        <div id="child1"></div>
+        <div id="child2"></div>
+        <div class="clear"></div>
+    </div> -->
+</body>
+</html>
